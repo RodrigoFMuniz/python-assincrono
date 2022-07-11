@@ -20,9 +20,17 @@
 ### Dois tipos de concorrência
 
 - Programação paralela
+  - Divisão da terefa em pequenas sub tarefas
+  - Executa em múltiplos cores do processador, de maneira simultânea.
+  - Melhor utilização em tarefas que fazem uso excessivo da CPU/GPU.
+    - Strings
+    - Algoritmos de busca
+    - Processamento gráfico
+    - Algoritmo de processamento numérico
 - Programação Assíncrona
 
 ### Em execução de concorrência
 
 - Ordem de execução
+  - A ordem de execução das instruções não deve gerar efeitos no resultado final.
 - Recursos compartilhados
