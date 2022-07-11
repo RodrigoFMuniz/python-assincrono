@@ -15,7 +15,7 @@
 
 ## Concorrência e programação assíncrona
 
-> Em ciência da computação, **concorrência** é a **execução** de **múltiplas instruções sequênciais** ao mesmo tempo.
+> Em ciência da computação, **<ins>concorrência</ins>** é a **execução** de **múltiplas instruções sequênciais** ao mesmo tempo.
 
 ### Dois tipos de concorrência
 
