@@ -53,3 +53,10 @@
 ## Threads
 
 - Primeiro recurso criado para realizar programação concorrente, fazendo uso de multi-threading.
+
+## Processos
+
+- O contexto de execução de um programa sendo executado é considerado um processo.
+- É uma instância de um programa de computador sendo executado.
+- É composto por um conjunto de recursos, como memória, segurança, etc, que são atribuídos a este processo.
+- É composto por uma, ou mais threads.
