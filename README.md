@@ -61,3 +61,33 @@
 - É uma instância de um programa de computador sendo executado.
 - É composto por um conjunto de recursos, como memória, segurança, etc, que são atribuídos a este processo.
 - É composto por uma, ou mais threads.
+
+## Programa usando Threads
+
+    import threading
+
+
+    def alguma_coisa(param):
+        print('Executa algo ...')
+        print(f'Usa o parâmetro {param}')
+
+        return param * param
+
+
+    th = threading.Thread(target=alguma_coisa, args=(42,))
+    th.start()
+    th.join()
+
+### th = threading.Thread(target=alguma_coisa, args=(42,))
+
+- Forma declarativa de uma thread para execução de uma função e seus argumentos.
+
+### th.start()
+
+- Método responsável por inserir a função no pool de threads.
+- Agenda sua execução de acordo com a disponibilidade de processamento.
+- Inseri o programa em uma sequência de execução.
+
+### th.join()
+
+- Método responsável por não deixar a execução do programa seguir até a finalização desta função. e.g(alguma_coisa)
