@@ -65,6 +65,7 @@
 ## Programa usando Threads
 
     import threading
+    import time
 
 
     def alguma_coisa(param):
@@ -77,6 +78,8 @@
     th = threading.Thread(target=alguma_coisa, args=(42,))
     th.start()
     th.join()
+    time.sleep(2)
+    print('Finalizou após o time')
 
 ### th = threading.Thread(target=alguma_coisa, args=(42,))
 
