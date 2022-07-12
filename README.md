@@ -53,6 +53,7 @@
 ## Threads
 
 - Primeiro recurso criado para realizar programação concorrente, fazendo uso de multi-threading.
+- É a menor sequência de instruções que pode ser gerenciada pelo sistema operacional.
 
 ## Processos
 
