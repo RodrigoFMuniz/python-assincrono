@@ -31,6 +31,12 @@
   - é utilizada em operações de leitura e escrita em dispositivos I/O.
   - Em operações que sejam mais lentas e dependem de um retorno de execução, que pode ser sucesso, ou falha.
   - Em um programa que possua partes de sua execução de forma assincrona.
+  - Quando a instrução assíncrona é executada, ao invés do processador ficar esperando sua conclusão ele delega a execução desta sub-tarefa a alguma outra thread ou dispositivo e continua fazendo algum outro trabalho ao invés de esperar a execução destas tarefas. Quando a sub-tarefa assíncrona finaliza a execução a thread principal é notificada e faz uso dos resultados. Isso é chamado de funções de call-back.
+  - Em algumas linguagens de programação, ao invés de utilizar funções call-back são utilizados outros objetos com operações incompletas conhecidos como promisses, futures ousimplesmente tarefa (task);
+  - A programação assíncrona é melhor utilizada em tarefas que exigem uso intensivo de IO, como:
+    - Leitura ou escrita em bancos de dados;
+    - Chamadas à Web Services (APIs);
+    - Cópia, upload ou download de dados; -
 
 ### Em execução de concorrência
 
