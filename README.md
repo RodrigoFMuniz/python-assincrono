@@ -28,6 +28,9 @@
     - Processamento gráfico
     - Algoritmo de processamento numérico
 - Programação Assíncrona
+  - é utilizada em operações de leitura e escrita em dispositivos I/O.
+  - Em operações que sejam mais lentas e dependem de um retorno de execução, que pode ser sucesso, ou falha.
+  - Em um programa que possua partes de sua execução de forma assincrona.
 
 ### Em execução de concorrência
 
