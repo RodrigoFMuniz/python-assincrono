@@ -43,3 +43,9 @@
 - Ordem de execução
   - A ordem de execução das instruções não deve gerar efeitos no resultado final.
 - Recursos compartilhados
+
+## GIL - Global Interpreter Lock
+
+- O GIL é um recurso de bloqueio que previne que múltiplas threads nativas executem um código Python ao mesmo tempo. Isso é necessário para manter a thread de execução segura, ou seja, não permitindo que outras threads façam uso do código ainda em execução, desta forma causando fefeitos indesejados no resultado final. Ao mesmo tempo que este recurso faz com que a execução do código Python em uma thread seja segura (thread safe), faz com que os programas Python fiquem “presos” à execução de uma thread única (simples) e consequentemente 1 processo.
+- A razão inicial da criação do GIL em Python é que o gerenciamento interno de memória do interpretador Python não é thread-safe.
+- Thread-safe é um conceito aplicável no contexto de programas multi-thread. Um código é considerado thread-safe se ele apenas manipula estruturas de dados compartilhadas de uma forma que garanta uma execução segura através de várias threads ao mesmo tempo.
