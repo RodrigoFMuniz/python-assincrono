@@ -90,6 +90,7 @@
 - Método responsável por inserir a função no pool de threads.
 - Agenda sua execução de acordo com a disponibilidade de processamento.
 - Inseri o programa em uma sequência de execução.
+- Não executa a thread em si. Realiza as tarefas descritas acima.
 
 ### th.join()
 
