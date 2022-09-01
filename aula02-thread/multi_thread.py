@@ -13,12 +13,12 @@ def main():
     [th.start() for th in threads]
     print('\nIniciando a thread\n')
     [th.join() for th in threads]
-    print('Finalizando a thread')
+    print('\nFinalizando a thread\n')
 
 
 def imprimir(cor):
     for i, c in enumerate(range(10)):
-        print(f'Cor impressa: rodada {i} - {cor}')
+        print(f'Cor impressa: rodada {i} - {cor}\n')
         time.sleep(1)
 
 
