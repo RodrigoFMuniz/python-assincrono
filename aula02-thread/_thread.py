@@ -12,6 +12,8 @@ def alguma_coisa(param, a):
 if __name__ == "__main__":
     th = threading.Thread(target=alguma_coisa, args=(42, 'olá',))
     th.start()
+    print('\nIniciou antes do time\n')
+    print('time')
+    time.sleep(10)
     th.join()
-    time.sleep(2)
     print('Finalizou após o time')
